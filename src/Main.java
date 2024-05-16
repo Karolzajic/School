@@ -35,7 +35,8 @@ public class Main {
         clazzes.forEach(clazz -> clazz.getStudents().forEach(students ->subjects.forEach(subject -> students.scheduleOfSubject())));
 
        Random randomGrades = new Random();
-       clazzes.forEach(clazz -> clazz.getStudents().forEach(students->subjects.forEach(subject -> students.setGrades(subject, new Grades(randomGrades.nextInt(5))))));
+       clazzes.forEach(clazz -> clazz.getStudents().forEach(students->subjects.forEach(subject -> students.setGrades(subject, new Grades(randomGrades.nextInt(5git push -u origin main
+       ))))));
 
 
 
