@@ -1,8 +1,8 @@
 public class Subject {
-    private String name;
-    private Teachers teacher;
+    private final String name;
+    private final Teacher teacher;
 
-    public Subject (String name, Teachers teacher){
+    public Subject(String name, Teacher teacher) {
         this.name = name;
         this.teacher = teacher;
     }
@@ -11,15 +11,5 @@ public class Subject {
         return name;
     }
 
-    public Teachers getTeacher() {
-        return teacher;
-    }
 
-    public void add(Subject subject) {
-    }
-
-
-    public Object toList() {
-        return null;
-    }
 }

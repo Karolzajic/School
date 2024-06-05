@@ -1,14 +1,13 @@
-import java.rmi.StubNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Clazz {
     private String name;
-    private Teachers primaryTeacher;
-    private List<Students> students = new ArrayList<>();
+    private Teacher primaryTeacher;
+    private List<Student> students = new ArrayList<>();
 
 
-    public Clazz(String name, Teachers primaryTeacher) {
+    public Clazz(String name, Teacher primaryTeacher) {
         this.name = name;
         this.primaryTeacher = primaryTeacher;
 
@@ -18,14 +17,10 @@ public class Clazz {
         return name;
     }
 
-    public Teachers getPrimaryTeacher() {
-        return primaryTeacher;
-    }
-
-    public List<Students> getStudents() {
+    public List<Student> getStudents() {
         return students;
     }
-    public void addStudent(){
-        addStudent();
+    public void addStudent(Student student){
+        addStudent(student);
     }
 }
