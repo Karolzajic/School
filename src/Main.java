@@ -48,10 +48,7 @@ public class Main {
         }
 
         Random randomGrades = new Random();
-        clazzes.forEach(clazz -> clazz.getStudents().forEach(student -> subjects.forEach(subject -> student.setGrade(subject, new Grades(randomGrades.nextInt(6))))));
-        
-
-        public static void studentOverviewByAverageGrade(List<Student> students){
+        clazzes.forEach(clazz -> clazz.getStudents().forEach(student -> subjects.forEach(subject -> student.setGrade(subject, new Grades(randomGrades.nextInt(6))))));public static void studentOverviewByAverageGrade(List<Student> students){
            List<String> studentOverviewBaG = students.stream()
                     .sorted(Comparator.comparingDouble(Student::averageGrade))
                     .map(student -> student.getName() + ": "
